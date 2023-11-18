@@ -5,10 +5,9 @@ import NavbarComponent from "./components/header/NavbarComponent";
 function App() {
   return (
     <>
-      <header>
-        <NavbarComponent />
-      </header>
-      <main className="h-screen bg-gradient-to-r from-indigo-800"></main>
+      <main className="h-screen bg-gradient-to-r from-indigo-800">
+        <h1>App Page</h1>
+      </main>
     </>
   );
 }
