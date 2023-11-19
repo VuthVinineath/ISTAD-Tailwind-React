@@ -5,8 +5,11 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/about/About.jsx";
 import Layout from "./components/layout/layout.jsx";
-import Product from "./pages/product/Product.jsx";
 import Service from "./pages/service/Service.jsx";
+import Contact from "./pages/contact/Contact.jsx";
+import Home from "./pages/home/Home.jsx";
+import ProductDetail from "./pages/product/ProductDetail.jsx";
+import SignUp from "./pages/auth/SignUp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +17,15 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "",
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "detail",
+        element: <ProductDetail />,
+      },
+      {
+        path: "app",
         element: <App />,
       },
       {
@@ -22,14 +33,18 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "product",
-        element: <Product />,
-      },
-      {
         path: "service",
         element: <Service />,
       },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
     ],
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
   },
 ]);
 

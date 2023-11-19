@@ -6,7 +6,7 @@ function NavbarComponent() {
   const [navbar, setNavbar] = useState([
     {
       title: "Home",
-      url: "/",
+      url: "/home",
       active: true,
     },
     {
